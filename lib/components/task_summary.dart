@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/task.dart';
 
 class TaskSummary extends StatelessWidget {
-  final List<Task> todos; // Deve ser List<Task>
+  final List<Task> todos;
   final VoidCallback onClearAll;
 
   const TaskSummary({
@@ -20,7 +20,7 @@ class TaskSummary extends StatelessWidget {
         ),
         SizedBox(width: 8),
         ElevatedButton(
-          onPressed: onClearAll, // Ação de limpar todas as tarefas
+          onPressed: onClearAll,
           style: ElevatedButton.styleFrom(
             backgroundColor: Color(0xff00d7f3),
             padding: EdgeInsets.all(14),
